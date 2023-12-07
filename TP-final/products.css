@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+
+body{
+    background-color: antiquewhite;
+    font-family: 'Young Serif', serif;
+    margin: 0;
+    padding: 0;
+}
+
+header,nav,main,footer{
+    margin: 10px;
+    padding: 10px;
+}
+
+header{
+    background-color: #b7a3ad;
+    text-align: center;
+    color: white;
+}
+
+nav ul{
+    list-style: none;
+    padding: 0;
+}
+
+nav li{
+    display: inline;
+    margin-right: 20px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+}
+
+section{
+    margin-bottom: 20px;
+}
+
+.product{
+    background-color: white;
+    border: 2px solid #d8346b;
+    padding: 20px;
+    margin: 10px;
+    text-align: center;
+}
+
+.product img{
+    max-width: 300px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.price{
+    font-weight: bold;
+    color: #bca1a8;
+}
+
+button{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    width: auto;
+    margin: 10px;
+    padding: 10px;
+    background-color: #ad063e;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #d8346b;
+}
+
+footer{
+    text-align: center;
+    background-color: #cfabb1;
+    color: #ad063e;
+}
+
+/* MEDIA QUERYS */
+
+/* pantallas pequeñas*/
+@media only screen and (max-width: 600px) {
+    .container{
+        background-color: #bca1a8;
+    }
+}
+
+/*pantallas medianas*/
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+    .container{
+        background-color: #eed3e1;
+    }
+}
+
+/*pantallas grandes*/
+@media only screen and (min-width: 901px) {
+    .container{
+        background-color: antiquewhite;
+    }
+}
